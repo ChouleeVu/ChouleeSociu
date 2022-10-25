@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Hind', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.section {
+    padding: 0 50px
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+header a {
+    color: aliceblue;
+}
+
+.header-right li {
+    position: relative;
+    padding: 10px 15px
+}
+
+.header-right li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: darkgreen;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.header-right li:hover::after {
+    width: 100%;
+}
+
+.header-right li:hover a {
+    color: darkgreen;
+    transition: 0.5;
+}
+
+.header-left i {
+    color: darkgreen;
+}
+
+/* banner */
+.banner .carousel-item {
+    height: 100vh;
+}
+
+.banner .carousel-item>img {
+    height: 100%;
+}
+
+.banner .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.avatar img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.myCarousel .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+}
+
+.banner .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border-bottom: none;
+    border-top: none;
+}
+
+.banner .carousel-indicators button.active {
+    background: darkgreen;
+}
+
+/* end banner */
+/* project */
+.project-description p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-tab .nav-item button {
+    color: black;
+    background: #fff;
+    border: 1px solid black;
+    margin: 0 20px 10px 10px;
+}
+
+.project-tab .nav-item button.active {
+    color: #fff;
+    background: green;
+    border: none;
+
+}
+
+/* end project */
